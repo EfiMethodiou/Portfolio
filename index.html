@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Efi Methodiou</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Hexagon css file-->
+    <link rel="stylesheet" href="css/hexagon.css">
+    <!--Explore button css file-->
+    <link rel="stylesheet" href="css/explore.css">
+    <!--Popup message css file-->
+    <link rel="stylesheet" href="css/popup.css">
+    <!--About me-->
+    <link rel="stylesheet" href="css/aboutme.css">
+    <!--Contact card-->
+    <link rel="stylesheet" href="css/contact-card.css">
+    <!--Footer-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!--Scripts-->
+    <script src="scripts.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="image logo">
+            <a href="#home"><img src="img/logo.png" height="95%"></a>
+        </div>
+        <div class="image menu">
+            <!--<input type="image" src="images/menu.png" height="55%"/>  -->
+            <a href="#menu"><img src="img/menu.png" height="55%" id="clickMenu" onclick="openMenu()"></a>
+        </div>
+    </header>
+    <div id="myNavigation" class="navigation">
+        <a href="#menu"><img src="img/close.png" class="close" onclick="closeMenu()"></a>
+        <a href="#home" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About Me</a>
+        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+    </div>
+    <div class="main">
+        <div id="home">
+            <div class="hexagons">
+                <div class="hexagonbig">
+                    <div class="hexagonbig1" id="hexagonbig1" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonbig2" id="hexagonbig2" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
+                </div>
+                <div class="hexagonmedium">
+                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed2" id="hexagonmed2" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed4" id="hexagonmed4" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                </div>
+                <div class="hexagonsmall">
+                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm2" id="hexagonsm2" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm3" id="hexagonsm3" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm4" id="hexagonsm4" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm5" id="hexagonsm5" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                </div>
+            </div>
+            <div class="hello">
+                <h1>Hello, I am Efi Methodiou.<br>
+                    <span style="letter-spacing: 4px;">
+                        I'm a Developer and <br>
+                        Software Engineer.</span></h1>
+            </div>
+            <div class="explorebt">
+                <button class="explore" onclick="document.getElementById('about').
+                        scrollIntoView();">Explore &darr;
+                    <span class="lineu"></span>
+                    <span class="liner"></span>
+                    <span class="lined"></span>
+                    <span class="linel"></span>
+                </button>
+            </div>
+
+        </div>
+        <!--END OF HOME-->
+
+        <div id="about" class="about">
+            <div class="title">
+                <h1>About Me</h1>
+                <span class="line"></span>
+            </div>
+            <div class="up_part">
+                <div class="photo">
+                    <div class="popup">
+                        <p>My passion is to create applications that <br>
+                            will make in this world a little better!</p>
+                    </div>
+                    <a><img src="img/about.png"></a>
+                </div>
+                <div class="information">
+                    <div class="paragraph">
+                        <p>Hello! I'm Efi Methodiou! I am a Computer Engineering student
+                            with specialization in Software Engineering.
+                            During my studies i worked on different subjects.
+                            But the ones that really interested me are: Databases with SQL,
+                            OOP with Java, Interaction Design,
+                            Web Development, Android Development and AI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--up part-->
+            <div class="down_part">
+                <div class="tech">
+                    <h1>Tech Skills</h1>
+                    <span class="line"></span>
+                </div>
+                <div class="skills">
+                    <p>Furthermore, apart from the University courses, I've taken a couple of online courses to further
+                        my skills, some of them are: &ensp;
+                        <a href="https://www.codecademy.com/learn/paths/web-development" target="_blank">Web
+                            Development Career Path</a> &emsp;&emsp;
+                        <a href="https://www.coursera.org/specializations/data-structures-algorithms"
+                            target="_blank">Data Structures and Algorithms</a>
+                    </p>
+                </div>
+                <div class="icons">
+                    <div class="icons-column">
+                        <li> <a><img src="img/skill_icons/javascript.png" width="40" ></a>
+                            <p>JavaScript</p>
+                        </li>
+                        <li><a><img src="img/skill_icons/html.png" width="50"></a>
+                            <p>HTML5/CSS3</p>
+                        </li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/java.png" width="40"></a>
+                            <p>Java</p></li>
+                        <li><img src="img/skill_icons/kotlin.png" width="40"></a>
+                            <p>Kotlin</p></li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/sql.png" width="40"></a>
+                            <p>SQL</p></li>
+                        <li><img src="img/skill_icons/git.png" width="60"></a>
+                            <p>Git</p></li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/react.png" width="40"></a>
+                            <p>React.js</p></li>
+                        <li><img src="img/skill_icons/python.png" width="40"></a>
+                            <p>Python</p></li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--END OF ABOUT ME-->
+
+        <div id="portfolio">
+            <div class="title">
+                <h1>Portfolio</h1>
+                <span class="line"></span>
+            </div>
+            <div class="photo">
+                <a><img src="img/portfolio.png"></a>
+            </div>
+            <div class="under_constr">
+                <p id="first-line">Under construction...</p>
+                <p id="second-line"> Busy creating, will be updated soon!</p>
+            </div>
+
+        </div>
+        <!--END OF PORTFOLIO-->
+
+        <div id="contact">
+            <div class="arrow">
+                <div class="curve"></div>
+                <div class="point"></div>
+            </div>
+            <div class="card middle">
+                <div class="back">
+                    <h2>Efi Methodiou</h2>
+                    <span>Developer</span>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-globe"></i>efimethodiou.com
+                            <!--fas fa-desktop-->
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>methodiouefi@gmail.com
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin-in"></i>linkedin.com/in/efi-methodiou
+                        </li>
+                    </ul>
+                    <div class="cart-hexagons">
+                        <img id="card-hexagons1" src="img/cart-haxagon.png">
+                        <img id="card-hexagons2" src="img/cart-haxagon.png">
+                        <img id="card-hexagons3" src="img/cart-haxagon.png">
+                    </div>
+                </div>
+                <div class="front">
+                    <span><img src="img/logo.png"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--END OF CONCACT-->
+
+    <footer>
+        <div class="main-footer">
+            <div class="left side">
+                <div class="content">
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/efi-methodiou/" target="_blank"><span
+                                class="fab fa-linkedin-in"></span></a>
+                        <a href="https://www.instagram.com/its.efimet/" target="_blank"><span
+                                class="fab fa-instagram"></span></a>
+                        <a href="https://github.com/EfiMethodiou" target="_blank"><span class="fab fa-git"></span></a>
+                        <a href="mailto:methodiouefi@gmail.com"><span class="far fa-envelope"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right side">
+                <div class="content">
+                    <div class="made">
+                        <h5>Made with <span id="heart" class="fas fa-heart"></span>
+                            and lots of <span id="coffee" class="fas fa-coffee"></span>
+                            by Efi Methodiou.
+                            <br> <span id="copy" class="far fa-copyright">2020</span></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
