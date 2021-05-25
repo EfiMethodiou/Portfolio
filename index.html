@@ -6,14 +6,20 @@
     <meta charset="utf-8">
     <link rel="icon" href="img/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Loader-->
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Hexagon css file-->
     <link rel="stylesheet" href="css/hexagon.css">
     <!--Explore button css file-->
-    <link rel="stylesheet" href="css/explore.css">
-    <!--Popup message css file-->
-    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/explorebtn.css">
+    <!--Image popup message css file-->
+    <link rel="stylesheet" href="css/imgmessage.css">
     <!--About me-->
     <link rel="stylesheet" href="css/aboutme.css">
     <!--Contact card-->
@@ -25,60 +31,85 @@
 
 </head>
 
-<body>
+<body onmousedown="return false">
+    <!--Loader-->
+    <div class="loader_bg" id="loader_bg">
+        <div class="container">
+
+            <div class="hex">
+                <div>
+                    <span class="one side6"></span>
+                    <span class="two side3"></span>
+                </div>
+            </div>
+            <div class="hex">
+                <div>
+                    <span class="one side1"></span>
+                    <span class="two side4"></span>
+                </div>
+            </div>
+            <div class="hex">
+                <div>
+                    <span class="one side5"></span>
+                    <span class="two side2"></span>
+                </div>
+            </div>
+            <div class="loader_image">
+                <img src="img/loader_logo.png">
+            </div>
+        </div>
+    </div>
     <header>
         <div class="image logo">
             <a href="#home"><img src="img/logo.png" height="95%"></a>
         </div>
-        <div class="image menu">
-            <!--<input type="image" src="images/menu.png" height="55%"/>  -->
-            <a href="#menu"><img src="img/menu.png" height="55%" id="clickMenu" onclick="openMenu()"></a>
+        <div id="menu" class="menu">
+            <div id="hamburger">
+                <input id="menuCheck" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="menu_items">
+                    <ul>
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <li> <a href="#about" onclick="closeMenu()">About Me</a></li>
+                        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
-    <div id="myNavigation" class="navigation">
-        <a href="#menu"><img src="img/close.png" class="close" onclick="closeMenu()"></a>
-        <a href="#home" onclick="closeMenu()">Home</a>
-        <a href="#about" onclick="closeMenu()">About Me</a>
-        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
-        <a href="#contact" onclick="closeMenu()">Contact</a>
-    </div>
+
     <div class="main">
         <div id="home">
             <div class="hexagons">
                 <div class="hexagonbig">
                     <div class="hexagonbig1" id="hexagonbig1" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonbig2" id="hexagonbig2" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
+                   
                 </div>
                 <div class="hexagonmedium">
-                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed2" id="hexagonmed2" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed4" id="hexagonmed4" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                </div>
+                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                    
+                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                   
+                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                </div>
                 <div class="hexagonsmall">
-                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonsm2" id="hexagonsm2" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>                   
                     <div class="hexagonsm3" id="hexagonsm3" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                     <div class="hexagonsm4" id="hexagonsm4" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                     <div class="hexagonsm5" id="hexagonsm5" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                 </div>
             </div>
             <div class="hello">
-                <h1>Hello, I am Efi Methodiou.<br>
+                <h1>Hello, I am Efi.<br>
                     <span style="letter-spacing: 4px;">
-                        I'm a Developer and <br>
-                        Software Engineer.</span></h1>
+                        I'm a Web Developer.</span></h1>
+                <div class="explorebt">
+                    <button class="explore" onclick="document.getElementById('about').
+                                    scrollIntoView();">Explore 
+                    </button>
+                </div>
             </div>
-            <div class="explorebt">
-                <button class="explore" onclick="document.getElementById('about').
-                        scrollIntoView();">Explore &darr;
-                    <span class="lineu"></span>
-                    <span class="liner"></span>
-                    <span class="lined"></span>
-                    <span class="linel"></span>
-                </button>
-            </div>
+
 
         </div>
         <!--END OF HOME-->
@@ -125,7 +156,7 @@
                 </div>
                 <div class="icons">
                     <div class="icons-column">
-                        <li> <a><img src="img/skill_icons/javascript.png" width="40" ></a>
+                        <li> <a><img src="img/skill_icons/javascript.png" width="40"></a>
                             <p>JavaScript</p>
                         </li>
                         <li><a><img src="img/skill_icons/html.png" width="50"></a>
@@ -134,21 +165,27 @@
                     </div>
                     <div class="icons-column">
                         <li><img src="img/skill_icons/java.png" width="40"></a>
-                            <p>Java</p></li>
+                            <p>Java</p>
+                        </li>
                         <li><img src="img/skill_icons/kotlin.png" width="40"></a>
-                            <p>Kotlin</p></li>
+                            <p>Kotlin</p>
+                        </li>
                     </div>
                     <div class="icons-column">
                         <li><img src="img/skill_icons/sql.png" width="40"></a>
-                            <p>SQL</p></li>
+                            <p>SQL</p>
+                        </li>
                         <li><img src="img/skill_icons/git.png" width="60"></a>
-                            <p>Git</p></li>
+                            <p>Git</p>
+                        </li>
                     </div>
                     <div class="icons-column">
                         <li><img src="img/skill_icons/react.png" width="40"></a>
-                            <p>React.js</p></li>
+                            <p>React.js</p>
+                        </li>
                         <li><img src="img/skill_icons/python.png" width="40"></a>
-                            <p>Python</p></li>
+                            <p>Python</p>
+                        </li>
                     </div>
                 </div>
             </div>
