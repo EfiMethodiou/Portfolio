@@ -1,0 +1,201 @@
+/*CONTACT*/
+#contact {
+  width: 100%;
+  height: 99vh;
+  left: 0;
+  background-color: #344a53;
+  border-top: 2px solid #00c9f9;
+  align-items: center;
+}
+
+/*CONCTACT BUSINESS CARD*/
+
+.card {
+  width: 25%;
+  min-width: 280px;
+  height: 17vw;
+  min-height: 200px;
+  margin-top: 2%;  
+}
+
+.middle {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back,
+.front {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.5s;
+}
+
+.back {
+  background: #e6f4f1;
+  transform: rotateX(180deg);
+}
+
+.front {
+  background: #2f4858;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateX(0deg);
+}
+
+.card:hover .front {
+  transform: rotateX(180deg);
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+/*front side style*/
+.front {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(90deg, #00c9f9, #00fe2e);
+}
+.front span img {
+  position: relative;
+  width: 50%;
+  left: 25%;
+}
+
+/*back side style*/
+.back {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 3px;
+  border-image-source: linear-gradient(90deg, #00c9f9, #00fe2e);
+}
+
+.back h2 {
+  color: #344a53;  
+  margin-left: 1.3vw;
+  font-size: 30px;
+}
+
+.back span {
+  background: #00c9f9;
+  padding: 4px 7px;
+  display: inline-block;
+  color: #e6f4f1;
+  font-size: 22px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.back .contact-info li {
+  margin: 10px 0;
+  display: flex;  
+  align-items: center;
+  color: #344a53;
+  font-size: 18px;
+}
+.back .contact-info li i {
+  width: 20px;
+  height: 20px;
+  background: #00c9f9;
+  color: #e6f4f1;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+
+/*Hegagons*/
+
+#card-hexagons1 {
+  position: absolute;
+  width: 10%;
+  left: 70%;
+  top: 20%;
+}
+
+#card-hexagons2 {
+  position: absolute;
+  width: 10%;
+  left: 80%;
+  top: 50%;
+}
+
+#card-hexagons3 {
+  position: absolute;
+  width: 10%;
+  left: 50%;
+  top: 80%;
+}
+
+/*Arrow*/
+
+.arrow {
+  position: relative;
+  float: left;
+  top: 48%;
+  left: 28%;
+  width: 10%;
+  transform: rotate(-40deg);
+
+  /*background-color: blue;*/
+}
+
+.arrow .curve {
+  border: 2.5px solid #00c9f9;
+  border-color: transparent transparent transparent #00c9f9;
+  height: 200px;
+  width: 300px;
+  border-radius: 230px 0 0 150px;
+  border-style: dashed;
+  /*background-color: blue;*/
+}
+
+.arrow .point {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+
+.arrow .point:before,
+.arrow .point:after {
+  border: 1.5px solid #00c9f9;
+  height: 25px;
+  content: "";
+  position: absolute;
+  border-style: dashed;
+}
+
+.arrow .point:before {
+  top: -11px;
+  left: -11px;
+  transform: rotate(-74deg);
+  -webkit-transform: rotate(-74deg);
+  -moz-transform: rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+  left: 5px;
+  transform: rotate(12deg);
+  -webkit-transform: rotate(12deg);
+  -moz-transform: rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
+
+@media screen and (max-width:500px){
+    #card-hexagons3{
+        display: none;
+    }
+    .arrow{
+        display: none;
+    }
+}

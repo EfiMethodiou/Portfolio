@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: none;  
+  border: none;
 }
 
 html,
@@ -20,7 +20,7 @@ body {
 
 h1,
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*SCROLLBAR*/
@@ -58,26 +58,16 @@ p {
   top: 40%;
   bottom: 30%;
   font-size: 1.3vw;
-  
+  line-height: 1.4;
   justify-content: center;
-  color: #e6f4f1;  
-}
-@media screen and (max-width:800px){
-  .hello{
-    font-size: 2vw;
-  }
-}
-@media screen and (max-width:500px){
-  .hello{
-    font-size: 3vw;
-  }
+  color: #e6f4f1;
 }
 
 /*the titles of the categories*/
 .title {
   position: relative;
   top: 3%;
-  font-size: 18px;
+  font-size: 1.3vw;
   text-align: center;
   color: #344a53;
 }
@@ -105,56 +95,66 @@ p {
 .photo img {
   width: 100%;
 }
+/*EXPLORE BUTTON*/
 
-/*ABOUT ME*/
-.about {
-  width: 100%;
-  min-height: 935px;
-  margin: auto;
-  display: block;
-  padding-top: 70px;
-  background-color: #e6f4f1;
-  border-bottom: 2px solid #00c9f9; /*will leave*/
-}
-
-/*PROJECTS*/
-#portfolio {
-  width: 100%;
-  height: 935px;
-  margin: auto;
-  padding-top: 70px;
-  background-color: #e6f4f1;
-  border-bottom: 2px solid #00c9f9; /*will leave*/
-}
-#portfolio .under_constr {
+.explorebt {
   position: relative;
   text-align: center;
-  width: 40%;
-  left: 30%;
-  top: -8%;
-  color: #344a53;
-  font-style: initial;
-}
-#portfolio .under_constr #first-line {
-  font-size: 30px;
-  font-style: italic;
-}
-#portfolio .under_constr #second-line {
-  font-size: 20px;
-  font-style: italic;
-}
-.under_constr p:hover {
-  background: -webkit-linear-gradient(90deg, #00c9f9, #00fe2e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  padding-top: 10%;
 }
 
-/*CONTACT*/
-#contact {
-  width: 100%;
-  height: 825px;
-  left: 0;
-  background-color: #344a53;
-  border-top: 2px solid #00c9f9;
-  align-items: center;
+.explore {
+  position: relative;
+  justify-content: center;
+  width: 40%;
+  min-width: 120px;
+  height: 100%;
+  min-height: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  color: #344a53;
+  border-radius: 20px;
+  background-color: #e6f4f1;
+  border: 1px solid #00c9f9;
+  box-shadow: 0 0 10px #00fe23;
+  animation: glowUp 4s ease-in 0s infinite;
+}
+
+@keyframes glowUp {
+  from {
+    box-shadow: 0 0 5px #00c9f9;
+  }
+  50% {
+    box-shadow: 0 0 20px #00fe23;
+  }
+  80% {
+    box-shadow: 0 0 12px #00c9f9;
+  }
+  90% {
+    box-shadow: 0 0 9px #00fe23;
+  }
+  to {
+    box-shadow: 0 0 5px #00c9f9;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hello {
+    font-size: 2vw;
+  }
+  .title {
+    font-size: 2vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hello {
+    font-size: 3vw;
+  }
+  .title {
+    font-size: 3vw;
+  }
 }

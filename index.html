@@ -15,15 +15,10 @@
     <link rel="stylesheet" href="css/loader.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Hexagon css file-->
-    <link rel="stylesheet" href="css/hexagon.css">
-    <!--Explore button css file-->
-    <link rel="stylesheet" href="css/explorebtn.css">
-    <!--Image popup message css file-->
-    <link rel="stylesheet" href="css/imgmessage.css">
-    <!--About me-->
-    <link rel="stylesheet" href="css/aboutme.css">
-    <!--Contact card-->
-    <link rel="stylesheet" href="css/contact-card.css">
+    <link rel="stylesheet" href="css/hexagon.css">        
+    <link rel="stylesheet" href="css/aboutme.css"> 
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
     <!--Footer-->
     <script src="https://kit.fontawesome.com/54d0b8d849.js" crossorigin="anonymous"></script>
     <!--Scripts-->
@@ -86,14 +81,15 @@
             <div class="hexagons">
                 <div class="hexagonbig">
                     <div class="hexagonbig1" id="hexagonbig1" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
-                   
+
                 </div>
                 <div class="hexagonmedium">
-                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                    
-                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                   
-                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>                </div>
+                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                </div>
                 <div class="hexagonsmall">
-                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>                   
+                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                     <div class="hexagonsm3" id="hexagonsm3" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                     <div class="hexagonsm4" id="hexagonsm4" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
                     <div class="hexagonsm5" id="hexagonsm5" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
@@ -105,7 +101,7 @@
                         I'm a Web Developer.</span></h1>
                 <div class="explorebt">
                     <button class="explore" onclick="document.getElementById('about').
-                                    scrollIntoView();">Explore 
+                                    scrollIntoView();">Explore
                     </button>
                 </div>
             </div>
@@ -122,19 +118,20 @@
             <div class="up_part">
                 <div class="photo">
                     <div class="popup">
-                        <p>My passion is to create applications that <br>
+                        <p>My passion is to create applications that
                             will make in this world a little better!</p>
                     </div>
-                    <a><img src="img/about.png"></a>
+                    <a><img src="img/about.png" style="width: 90%;"></a>
                 </div>
                 <div class="information">
                     <div class="paragraph">
-                        <p>Hello! I'm Efi Methodiou! I am a Computer Engineering student
-                            with specialization in Software Engineering.
-                            During my studies i worked on different subjects.
-                            But the ones that really interested me are: Databases with SQL,
-                            OOP with Java, Interaction Design,
-                            Web Development, Android Development and AI.
+                        <p>
+                            Hello! I’m Efi Methodiou! I’m in my last year of Computer Engineering school with a
+                            specialization in Software Engineering. During my studies I worked on different subjects
+                            such as: databases with SQL, OOP with Java, Interaction Design, Web Development, Android
+                            Development and AI.<br>
+                            For almost two years, I have spent my spare time, focusing on working with UI Design and Web
+                            development. I have also supplement my learning with online courses to further my skills.
                         </p>
                     </div>
                 </div>
@@ -144,15 +141,6 @@
                 <div class="tech">
                     <h1>Tech Skills</h1>
                     <span class="line"></span>
-                </div>
-                <div class="skills">
-                    <p>Furthermore, apart from the University courses, I've taken a couple of online courses to further
-                        my skills, some of them are: &ensp;
-                        <a href="https://www.codecademy.com/learn/paths/web-development" target="_blank">Web
-                            Development Career Path</a> &emsp;&emsp;
-                        <a href="https://www.coursera.org/specializations/data-structures-algorithms"
-                            target="_blank">Data Structures and Algorithms</a>
-                    </p>
                 </div>
                 <div class="icons">
                     <div class="icons-column">
@@ -176,7 +164,7 @@
                             <p>SQL</p>
                         </li>
                         <li><img src="img/skill_icons/git.png" width="60"></a>
-                            <p>Git</p>
+                            <p style="margin-left: 1%; margin-top: -10%;">Git</p>
                         </li>
                     </div>
                     <div class="icons-column">
@@ -184,7 +172,7 @@
                             <p>React.js</p>
                         </li>
                         <li><img src="img/skill_icons/python.png" width="40"></a>
-                            <p>Python</p>
+                            <p style="margin-top: 15%;">Python</p>
                         </li>
                     </div>
                 </div>
