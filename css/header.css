@@ -40,7 +40,7 @@ header {
   width: 10%;
   z-index: 1;
   right: 0;
-  margin: 1.8vw 10%;
+  margin: 1.8vw 2vw;
   overflow: visible;
   -webkit-user-select: none;
   user-select: none;    
@@ -132,7 +132,7 @@ header {
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   #menu_items li {
     width: 23vw;
     font-size: 2vw;
@@ -141,8 +141,8 @@ header {
     left: -80%;
   }
   #hamburger span {
-    width: 21px;
-    height: 1px;
+    width: 25px;
+    height: 2px;
   }
   #hamburger{
     margin: 3vw;

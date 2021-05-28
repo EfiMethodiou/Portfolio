@@ -21,7 +21,7 @@ $(window).on('load', function() {
 function closeMenu() {
   document.getElementById("menuCheck").checked = false;  
 }
-
+/*CONTACT CARD FLIP ON CLICK FOR SMALL SCREENS */
 
 /*HEXAGON FUNCTIONS*/
 /*big to blue*/

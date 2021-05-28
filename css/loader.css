@@ -212,8 +212,13 @@
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
     .loader_image img {
-        margin: 2vw 1vw; 
+        margin: 3vw 1vw; 
     }
+}
+@media screen and (max-width:400px){
+  .loader_image img {
+      margin: 8vw 4vw; 
+  }
 }

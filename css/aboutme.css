@@ -1,7 +1,7 @@
 /*ABOUT ME*/
 .about {
   width: 100%;
-  min-height: 935px;
+  min-height: 100vh;
   margin: auto;
   display: block;
   padding-top: 70px;
@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: row;
   align-content: space-evenly;
-  margin:4%  2%;
+  margin:4% 2%;
   /*background-color: aqua; */
 }
 .icons-column {
@@ -116,7 +116,7 @@
   font-size: 18px;
   display: block;  
   margin: 1% 9%;
-  padding-left: 10px;  
+  padding-left: 1%;  
 }
 .icons-column li {
   display: table-cell;
@@ -136,6 +136,12 @@
 }
 
 
+@media screen and (max-width:1000px){
+  .icons-column{
+    margin-left: 5%;    
+  }
+}
+
 @media screen and (max-width:500px){
   .paragraph p{
     font-size: 4vw;
@@ -149,6 +155,9 @@
   .icons-column{
     margin: 1% 5%;
     font-size: 2vw;
+  }
+  .popup {
+    display: none;
   }
   
 }

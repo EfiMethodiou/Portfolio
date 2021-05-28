@@ -15,7 +15,7 @@
   min-width: 280px;
   height: 17vw;
   min-height: 200px;
-  margin-top: 2%;  
+  margin-top: 2%;
 }
 
 .middle {
@@ -74,31 +74,32 @@
   border: 10px solid;
   border-image-slice: 1;
   border-width: 3px;
+  padding-top: 2%;
   border-image-source: linear-gradient(90deg, #00c9f9, #00fe2e);
 }
 
 .back h2 {
-  color: #344a53;  
-  margin-left: 1.3vw;
-  font-size: 30px;
+  color: #344a53;
+  margin-left: 5%;
+  font-size: 2.2vw;
 }
 
 .back span {
   background: #00c9f9;
-  padding: 4px 7px;
+  padding: 4px 5px 4px 1px;
   display: inline-block;
   color: #e6f4f1;
-  font-size: 22px;
-  margin-left: 20px;
+  font-size: 1.5vw;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 
 .back .contact-info li {
-  margin: 10px 0;
-  display: flex;  
+  margin: 3% 5%;
+  display: flex;
   align-items: center;
   color: #344a53;
-  font-size: 18px;
+  font-size: 1.3vw;
 }
 .back .contact-info li i {
   width: 20px;
@@ -132,70 +133,83 @@
   position: absolute;
   width: 10%;
   left: 50%;
-  top: 80%;
+  margin-top: -2%;
 }
 
 /*Arrow*/
-
 .arrow {
   position: relative;
   float: left;
-  top: 48%;
-  left: 28%;
-  width: 10%;
-  transform: rotate(-40deg);
-
+  top: 55%;
+  margin-left: 28vw;
+  width: 8%;
   /*background-color: blue;*/
 }
 
-.arrow .curve {
-  border: 2.5px solid #00c9f9;
-  border-color: transparent transparent transparent #00c9f9;
-  height: 200px;
-  width: 300px;
-  border-radius: 230px 0 0 150px;
-  border-style: dashed;
-  /*background-color: blue;*/
+@media screen and (max-width: 1000px) {
+  .arrow{
+    margin-left: 27%;   
+  }
+}
+@media screen and (max-width: 900px) {
+  .arrow{
+    margin-left: 22%;    
+  }
 }
 
-.arrow .point {
-  position: absolute;
-  left: 20px;
-  bottom: 30px;
+@media screen and (max-width: 800px) {
+  .arrow{
+    margin-left: 22%;    
+  }
+  #card-hexagons3 {
+    margin-top: -3%;
+  }
+  .back h2 {
+    font-size: 3vw;
+    margin-left: 3%;
+  }
+  .back span {
+    font-size: 2.5vw;
+    margin-left: 3%;
+  }
+  .back .contact-info li {
+    font-size: 2vw;
+    margin-left: 3%;
+  }
+ /* .arrow {
+    display: none;
+  }*/
 }
-
-.arrow .point:before,
-.arrow .point:after {
-  border: 1.5px solid #00c9f9;
-  height: 25px;
-  content: "";
-  position: absolute;
-  border-style: dashed;
+@media screen and (max-width: 700px) {
+  .arrow{
+    margin-left: 17%;    
+  }
 }
-
-.arrow .point:before {
-  top: -11px;
-  left: -11px;
-  transform: rotate(-74deg);
-  -webkit-transform: rotate(-74deg);
-  -moz-transform: rotate(-74deg);
-  -ms-transform: rotate(-74deg);
-}
-
-.arrow .point:after {
-  top: -20px;
-  left: 5px;
-  transform: rotate(12deg);
-  -webkit-transform: rotate(12deg);
-  -moz-transform: rotate(12deg);
-  -ms-transform: rotate(12deg);
-}
-
-@media screen and (max-width:500px){
-    #card-hexagons3{
-        display: none;
-    }
-    .arrow{
-        display: none;
-    }
+@media screen and (max-width: 500px) {
+ 
+  .card .front {
+    transform: rotateX(180deg);
+  }
+  
+  .card .back {
+    transform: rotateX(0deg);
+  }
+  #card-hexagons3 {
+    margin-top: -3%;
+  }
+  .back h2 {
+    font-size: 4.5vw;
+    margin-left: 3%;
+  }
+  .back span {
+    font-size: 3.5vw;
+    margin-left: 3%;
+  }
+  .back .contact-info li {
+    font-size: 3vw;
+    margin-left: 3%;
+  }
+  .arrow {
+    display: none;
+  }
 }
