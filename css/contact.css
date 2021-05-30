@@ -7,6 +7,12 @@
   border-top: 2px solid #00c9f9;
   align-items: center;
 }
+.phot img {
+  position: absolute;
+  width: 18%;
+  min-width: 100px;
+  margin: 8% 2%;
+}
 
 /*CONCTACT BUSINESS CARD*/
 
@@ -147,19 +153,19 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .arrow{
-    margin-left: 27%;   
+  .arrow {
+    margin-left: 27%;
   }
 }
 @media screen and (max-width: 900px) {
-  .arrow{
-    margin-left: 22%;    
+  .arrow {
+    margin-left: 22%;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .arrow{
-    margin-left: 22%;    
+  .arrow {
+    margin-left: 22%;
   }
   #card-hexagons3 {
     margin-top: -3%;
@@ -176,21 +182,20 @@
     font-size: 2vw;
     margin-left: 3%;
   }
- /* .arrow {
+  /* .arrow {
     display: none;
   }*/
 }
 @media screen and (max-width: 700px) {
-  .arrow{
-    margin-left: 17%;    
+  .arrow {
+    margin-left: 17%;
   }
 }
 @media screen and (max-width: 500px) {
- 
   .card .front {
     transform: rotateX(180deg);
   }
-  
+
   .card .back {
     transform: rotateX(0deg);
   }
