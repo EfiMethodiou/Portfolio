@@ -12,12 +12,11 @@
   position: absolute;
   width: 95%;
   height: 35vh;
-  margin: 10% 2%;
+  margin: 13% 2%;
   /*border: 2px solid cyan;*/
 }
 .projectContainer img {
   width: 19vw;
-  display: inline-block;
 }
 .project1,
 .project2,
@@ -27,8 +26,6 @@
   display: inline;
   margin: 0 2%;
 }
-
-
 
 
 @media screen and (max-width: 800px) {
