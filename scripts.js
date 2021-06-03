@@ -21,6 +21,7 @@ $(window).on('load', function() {
 function closeMenu() {
   document.getElementById("menuCheck").checked = false;  
 }
+
 /*PROJECTS SECTION FUNCTIONS*/
 $(document).ready(function () {
   $('#pr1')
@@ -128,4 +129,32 @@ function colorOrig() {
     "linear-gradient(90deg, #00c9f9, #00fe2e)";
   /*5*/ document.getElementById("hexagonsm5").style.backgroundImage =
     "linear-gradient(90deg, #00c9f9, #00fe2e)";
+}
+
+//todo project
+function openPrToDo() {
+  document.getElementById("pr_todo").style.display = "block";
+  document.getElementById("todoBackg").style.display = "block";
+}
+function closePrToDo() {
+  document.getElementById("pr_todo").style.display = "none";
+  document.getElementById("todoBackg").style.display = "none";
+}
+//games project
+function openPrGam() {
+  document.getElementById("pr_games").style.display = "block";
+  document.getElementById("gamBackg").style.display = "block";
+}
+function closePrGam() {
+  document.getElementById("pr_games").style.display = "none";
+  document.getElementById("gamBackg").style.display = "none";
+}
+//exhibition project
+function openPrExh() {
+  document.getElementById("pr_exh").style.display = "block";
+  document.getElementById("exhBackg").style.display = "block";
+}
+function closePrExh() {
+  document.getElementById("pr_exh").style.display = "none";
+  document.getElementById("exhBackg").style.display = "none";
 }

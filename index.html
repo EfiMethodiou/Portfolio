@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/loader.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Hexagon css file-->
-    <link rel="stylesheet" href="css/hexagon.css">        
-    <link rel="stylesheet" href="css/aboutme.css"> 
+    <link rel="stylesheet" href="css/hexagon.css">
+    <link rel="stylesheet" href="css/aboutme.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://kit.fontawesome.com/54d0b8d849.js" crossorigin="anonymous"></script>
@@ -181,27 +181,125 @@
         <!--END OF ABOUT ME-->
 
         <div id="portfolio">
+            <div id="todoBackg" onclick="closePrToDo()">
+            </div>
+            <div id="gamBackg" onclick="closePrGam()">
+            </div>
+            <div id="exhBackg" onclick="closePrExh()">
+            </div>
             <div class="title">
                 <h1>Portfolio</h1>
                 <span class="line"></span>
             </div>
-            
+
             <div class="projectContainer">
                 <div class="project1">
-                    <img id="pr1" src="img/projects/td1.png">                                          
+                    <img id="pr1" src="img/projects/td1.png" onclick="openPrToDo()">
                 </div>
                 <div class="project2">
-                    <img id="pr2" src="img/projects/gam1.png">
+                    <img id="pr2" src="img/projects/gam1.png" onclick="openPrGam()">
                 </div>
                 <div class="project3">
-                    <img id="pr3" src="img/projects/exh1.png">
+                    <img id="pr3" src="img/projects/exh1.png" onclick="openPrExh()">
                 </div>
                 <div class="project4">
-                    <img id="pr4" src="img/projects/pr4_1.png">
+                    <img id="pr4" src="img/projects/pr4_1.png" style="cursor: none;">
+                </div>
+
+                <div id="pr_todo" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/td3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/td4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/td5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>ToDos</b><br>
+                            The main focus of this project was a create a todo list that is different from the other
+                            lists that we see online.<br>
+                            The lists are build that way so it will seem like they are on a carousel. Depending on which
+                            day
+                            is it the carousel is landing on that day and when it’s the weekend the carousel lands by
+                            default on Monday.<br>
+                            The users can add a task, delete it, check it and also delete all of them. The tasks are
+                            saved in a JSON file and the user can also see how many tasks are pending. When all the
+                            tasks are checked then a message appears that congratulates the user for finishing each day.
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://gifted-curran-14b564.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrToDo()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+
+                <div id="pr_games" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/gam3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/gam4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/gam5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>Games</b><br>
+                            The purpose of this website is for the users to have fun while practicing their memory,
+                            speed and strategy. The user can enter the games by clicking on the 3D cubes.<br>
+                            This website contains three games: 
+                            <ul>
+                                <li>Memory Cards</li>
+                                <li>Ping Pong</li>
+                                <li>Tic Tac Toe</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://hardcore-borg-39bae2.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrGam()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+
+                <div id="pr_exh" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/exh3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/exh4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/exh5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>ASN's artwork exhibition</b><br>
+                            As an intern at <a id="asnlink" href="https://artscience-node.com/" target="_blank">Art and Science Node</a>, one of my tasks was to create a website for an artwork
+                            exhibition.<br>
+                            This website contains 15 different artworks, some of them are videos, photos or both and one
+                            of them is an application that using geometric forms that constantly draws a dynamic and
+                            ever-changing graphic network that records the movement of people in the room.<br>
+                            The website also contains a 3D model that represent the root network of the Rhizosphere project.
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://friendly-heyrovsky-0b5f93.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrExh()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
                 </div>
 
             </div>
-     
+
 
         </div>
         <!--END OF PORTFOLIO-->
@@ -212,11 +310,13 @@
             </div>
             <div class="arrow">
                 <svg viewBox="0 0 163 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18.6793 1.26613C32.5 62.5 73 93 142.791 116.146" stroke="#00C9F9" stroke-width="2" stroke-dasharray="5.5 5.5"/>
-                    <path d="M139.074 93L153.708 119.438L125 130.442" stroke="#00C9F9" stroke-width="2" stroke-dasharray="5.5 5.5"/>
+                    <path d="M18.6793 1.26613C32.5 62.5 73 93 142.791 116.146" stroke="#00C9F9" stroke-width="2"
+                        stroke-dasharray="5.5 5.5" />
+                    <path d="M139.074 93L153.708 119.438L125 130.442" stroke="#00C9F9" stroke-width="2"
+                        stroke-dasharray="5.5 5.5" />
                 </svg>
             </div>
-            
+
             <div class="card middle">
                 <div class="back">
                     <h2>Efi Methodiou</h2>
