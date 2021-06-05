@@ -11,7 +11,7 @@ $(window).on('load', function() {
       setTimeout(function () {
         $(".loader_bg").fadeToggle();  
         document.body.style.overflow = "visible";
-      }, 3200);
+      }, 3000);
       sessionStorage.setItem('loadedProgress', true);
     }
   });

@@ -50,10 +50,10 @@
 /*Project popups*/
 
 #todoBackg, #gamBackg, #exhBackg{
-  margin-top: -6vw;
+  margin-top: -10vw;
   position: absolute;
   width: 100%;
-  height: 104vh;
+  height: 110vh;
   overflow: hidden;
   display: none;
   z-index: 10;
@@ -195,8 +195,46 @@
 }
 
 
+@media screen and (max-width:800px){
+ 
+  #todoBackg, #gamBackg, #exhBackg{
+    margin-top: -12%;
+  }
+  .popupWindow {
+    width: 95%;
+    margin-top: -75%;
+    margin-left: 3%;    
+  }
+    .projectIm { 
+    margin-top: 10%;
+  }
+  .projectIm img{
+    padding-top: 5%;    
+  }
+  #paragraph {
+    margin-top: -5%;
+    font-size: 2vw;
+  }
+  #paragraph li{
+    font-size: 2vw;
+    margin-left: 3%;   
+  }
+  #thelink {
+    margin-top: 75%;
+    margin-left: 5%;
+    font-size: 2vw;
+  }
+  #x {
+    top: -4.5%;
+    margin-left: 4%;
+    width: 4%;
+  }
+  
+}
+
 
 @media screen and (max-width:500px){
+  
   #todoBackg, #gamBackg, #exhBackg{
     margin-top: -18%;
   }
@@ -214,6 +252,7 @@
     padding-top: 10%;    
   }
   #paragraph {
+    margin-top: 0;
     font-size: 2.5vw;
   }
   #paragraph li{

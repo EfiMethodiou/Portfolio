@@ -108,8 +108,10 @@
   font-size: 1.3vw;
 }
 .back .contact-info li i {
-  width: 20px;
+  width: 22px;
+  max-width: 25px;
   height: 20px;
+  font-size: 1.3vw;
   background: #00c9f9;
   color: #e6f4f1;
   display: flex;
