@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Efi Methodiou</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!--Loader-->
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Hexagon css file-->
+    <link rel="stylesheet" href="css/hexagon.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="https://kit.fontawesome.com/54d0b8d849.js" crossorigin="anonymous"></script>
+    <!--Scripts-->
+    <script src="scripts.js"></script>
+
+</head>
+
+<body onmousedown="return false">
+    <!--Loader-->
+    <div class="loader_bg" id="loader_bg">
+        <div class="container">
+
+            <div class="hex">
+                <div>
+                    <span class="one side6"></span>
+                    <span class="two side3"></span>
+                </div>
+            </div>
+            <div class="hex">
+                <div>
+                    <span class="one side1"></span>
+                    <span class="two side4"></span>
+                </div>
+            </div>
+            <div class="hex">
+                <div>
+                    <span class="one side5"></span>
+                    <span class="two side2"></span>
+                </div>
+            </div>
+            <div class="loader_image">
+                <img src="img/loader_logo.png">
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="image logo">
+            <a href="#home"><img src="img/logo.png" height="95%"></a>
+        </div>
+        <div id="menu" class="menu">
+            <div id="hamburger">
+                <input id="menuCheck" type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <div id="menu_items">
+                    <ul>
+                        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                        <li> <a href="#about" onclick="closeMenu()">About Me</a></li>
+                        <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+                        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div id="home">
+            <div class="hexagons">
+                <div class="hexagonbig">
+                    <div class="hexagonbig1" id="hexagonbig1" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
+
+                </div>
+                <div class="hexagonmedium">
+                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                </div>
+                <div class="hexagonsmall">
+                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm3" id="hexagonsm3" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm4" id="hexagonsm4" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm5" id="hexagonsm5" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                </div>
+            </div>
+            <div class="hello">
+                <h1>Hello, I am Efi.<br>
+                    <span style="letter-spacing: 4px;">
+                        I'm a Web Developer.</span></h1>
+                <div class="explorebt">
+                    <button class="explore" onclick="document.getElementById('about').
+                                    scrollIntoView();">Explore
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <!--END OF HOME-->
+
+        <div id="about" class="about">
+            <div class="title">
+                <h1>About Me</h1>
+                <span class="line"></span>
+            </div>
+            <div class="up_part">
+                <div class="photo">
+                    <div class="popup">
+                        <p>My passion is to create applications that
+                            will make in this world a little better!</p>
+                    </div>
+                    <a><img src="img/about.png" style="width: 90%;"></a>
+                </div>
+                <div class="information">
+                    <div class="paragraph">
+                        <p>
+                            Hello! I’m Efi Methodiou! I’m in my last year of Computer Engineering school with a
+                            specialization in Software Engineering. During my studies I worked on different subjects
+                            such as: databases with SQL, OOP with Java, Interaction Design, Web Development, Android
+                            Development and AI.<br>
+                            For almost two years, I have spent my spare time, focusing on working with UI Design and Web
+                            development. I have also supplement my learning with online courses to further my skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--up part-->
+            <div class="down_part">
+                <div class="tech">
+                    <h1>Tech Skills</h1>
+                    <span class="line"></span>
+                </div>
+                <div class="icons">
+                    <div class="icons-column">
+                        <li> <a><img src="img/skill_icons/javascript.png" width="40"></a>
+                            <p>JavaScript</p>
+                        </li>
+                        <li><a><img src="img/skill_icons/html.png" width="50"></a>
+                            <p>HTML5/CSS3</p>
+                        </li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/java.png" width="40"></a>
+                            <p>Java</p>
+                        </li>
+                        <li><img src="img/skill_icons/kotlin.png" width="40"></a>
+                            <p>Kotlin</p>
+                        </li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/sql.png" width="40"></a>
+                            <p>SQL</p>
+                        </li>
+                        <li><img src="img/skill_icons/git.png" width="60"></a>
+                            <p style="margin-left: 1%; margin-top: -10%;">Git</p>
+                        </li>
+                    </div>
+                    <div class="icons-column">
+                        <li><img src="img/skill_icons/react.png" width="40"></a>
+                            <p>React.js</p>
+                        </li>
+                        <li><img src="img/skill_icons/python.png" width="40"></a>
+                            <p style="margin-top: 15%;">Python</p>
+                        </li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--END OF ABOUT ME-->
+
+        <div id="portfolio">
+            <div id="todoBackg" onclick="closePrToDo()">
+            </div>
+            <div id="gamBackg" onclick="closePrGam()">
+            </div>
+            <div id="exhBackg" onclick="closePrExh()">
+            </div>
+            <div class="title">
+                <h1>Portfolio</h1>
+                <span class="line"></span>
+            </div>
+
+            <div class="projectContainer">
+                <div class="project1">
+                    <img id="pr1" src="img/projects/td1.png" onclick="openPrToDo()">
+                </div>
+                <div class="project2">
+                    <img id="pr2" src="img/projects/gam1.png" onclick="openPrGam()">
+                </div>
+                <div class="project3">
+                    <img id="pr3" src="img/projects/exh1.png" onclick="openPrExh()">
+                </div>
+                <div class="project4">
+                    <img id="pr4" src="img/projects/pr4_1.png" style="cursor: none;">
+                </div>
+
+                <div id="pr_todo" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/td3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/td4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/td5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>ToDos</b><br>
+                            The main focus of this project was a create a todo list that is different from the other
+                            lists that we see online.<br>
+                            The lists are build that way so it will seem like they are on a carousel. Depending on which
+                            day
+                            is it the carousel is landing on that day and when it’s the weekend the carousel lands by
+                            default on Monday.<br>
+                            The users can add a task, delete it, check it and also delete all of them. The tasks are
+                            saved in a JSON file and the user can also see how many tasks are pending. When all the
+                            tasks are checked then a message appears that congratulates the user for finishing each day.
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://gifted-curran-14b564.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrToDo()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+
+                <div id="pr_games" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/gam3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/gam4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/gam5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>Games</b><br>
+                            The purpose of this website is for the users to have fun while practicing their memory,
+                            speed and strategy. The user can enter the games by clicking on the 3D cubes.<br>
+                            This website contains three games:
+                        <ul>
+                            <li>Memory Cards</li>
+                            <li>Ping Pong</li>
+                            <li>Tic Tac Toe</li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://hardcore-borg-39bae2.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrGam()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+
+                <div id="pr_exh" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/exh3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/exh4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/exh5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>ASN's artwork exhibition</b><br>
+                            As an intern at <a id="asnlink" style="color:#f07338;" href="https://artscience-node.com/"
+                                target="_blank">Art and Science Node</a>, one of my tasks was to create a website that was part in an
+                            artwork
+                            exhibition for the <a style="text-decoration: underline;"
+                                href="https://europlantbiology2020.org/" target="_blank">Plant Biology Europe Congress
+                                2021</a>. The exhibition combined the worlds of art, science and innovation,
+                            providing an international survey of artworks created by artists in collaboration with
+                            scientists in the field of life sciences and biotechnology.</p>
+                            <p style="padding-top: 1.5%;">
+                            This website contains 15 different artworks, some of them are videos, photos or both and one
+                            of them is an application that is using geometric forms and constantly draws a dynamic and
+                            ever-changing graphic network that records the movement of people in the room.
+                            The website also contains a 3D model that represent the root network of the Rhizosphere
+                            project.<br>
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://friendly-heyrovsky-0b5f93.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrExh()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--END OF PORTFOLIO-->
+
+        <div id="contact">
+            <div class="phot">
+                <a><img src="img/contact.png"></a>
+            </div>
+            <div class="arrow">
+                <svg viewBox="0 0 163 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.6793 1.26613C32.5 62.5 73 93 142.791 116.146" stroke="#00C9F9" stroke-width="2"
+                        stroke-dasharray="5.5 5.5" />
+                    <path d="M139.074 93L153.708 119.438L125 130.442" stroke="#00C9F9" stroke-width="2"
+                        stroke-dasharray="5.5 5.5" />
+                </svg>
+            </div>
+
+            <div class="card middle">
+                <div class="back">
+                    <h2>Efi Methodiou</h2>
+                    <span>Web Developer</span>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-globe"></i>efimethodiou.com
+                            <!--fas fa-desktop-->
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>methodiouefi@gmail.com
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin-in"></i>linkedin.com/in/efi-methodiou
+                        </li>
+                    </ul>
+                    <div class="cart-hexagons">
+                        <img id="card-hexagons1" src="img/cart-haxagon.png">
+                        <img id="card-hexagons2" src="img/cart-haxagon.png">
+                        <img id="card-hexagons3" src="img/cart-haxagon.png">
+                    </div>
+                </div>
+                <div class="front">
+                    <span><img src="img/logo.png"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--END OF CONCACT-->
+
+    <footer>
+        <div class="main-footer">
+            <div class="left side">
+                <div class="content">
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/efi-methodiou/" target="_blank"><span
+                                class="fab fa-linkedin-in"></span></a>
+                        <a href="https://www.instagram.com/its.efimet/" target="_blank"><span
+                                class="fab fa-instagram"></span></a>
+                        <a href="https://github.com/EfiMethodiou" target="_blank"><span class="fab fa-git"></span></a>
+                        <a href="mailto:methodiouefi@gmail.com"><span class="far fa-envelope"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right side">
+                <div class="content">
+                    <div class="made">
+                        <h5>Made with <span id="heart" class="fas fa-heart"></span>
+                            and lots of <span id="coffee" class="fas fa-coffee"></span>
+                            by Efi Methodiou.
+                            <br> <span id="copy" class="far fa-copyright">2021</span></h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

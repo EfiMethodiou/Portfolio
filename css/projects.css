@@ -1,0 +1,273 @@
+/*PROJECTS*/
+#portfolio {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  padding-top: 70px;
+  background-color: #e6f4f1;
+  border-bottom: 2px solid #00c9f9; /*will leave*/
+}
+
+.projectContainer {
+  position: absolute;
+  width: 95%;
+  height: 35vh;
+  margin: 13% 2%;
+  /*border: 2px solid cyan;*/
+}
+.projectContainer img {
+  width: 19vw;
+  cursor: pointer;
+}
+.project1,
+.project2,
+.project3,
+.project4 {
+  position: relative;
+  display: inline;
+  margin: 0 2%;
+}
+@media screen and (max-width: 800px) {
+  .projectContainer {
+    width: 70vw;
+    margin-left: 15%;
+  }
+  .projectContainer img {
+    width: 30vw;    
+  }
+ 
+}
+@media screen and (max-width: 500px) {
+  .projectContainer {
+    width: 95%;
+    margin-left: 5%;
+  }
+  .projectContainer img {
+    width: 40vw;    
+  }
+}
+
+/*Project popups*/
+
+#todoBackg, #gamBackg, #exhBackg{
+  margin-top: -10vw;
+  position: absolute;
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+  display: none;
+  z-index: 10;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+@media screen and (max-width:500px){
+  #aboutBackg, #gamBackg, #exhBackg {
+    margin-top: -16vw;
+  }
+}
+
+.popupWindow {
+  -webkit-user-select: none;
+  display: none;
+  background-color: rgb(230, 244, 241, 0.85);
+  position: absolute;
+  z-index:10;
+  width: 80%;  
+  height: 78vh;
+  margin-left: 11%;
+  margin-top: -48vh;
+  border-radius: 20px;
+}
+
+
+#paragraph { 
+  position: absolute;
+  margin: 8%;
+  margin-left: 30%;  
+  overflow: visible;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.3vw;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 1);
+  float: left; 
+}
+
+#paragraph ul{
+  padding-left: 4%;
+}
+#paragraph li{
+  padding-top: 1%;
+  text-align: left;
+  font-size: 1.3vw;
+}
+#paragraph a{
+  text-decoration: none;
+}
+#paragraph a:visited {
+  text-decoration: none;
+  color: black;
+}
+#paragraph #asnlink:hover{
+  font-weight: bold;
+}
+
+.projectIm ul{
+  list-style-type: none; 
+  position: absolute;
+  margin: 8% 5%;   
+}
+.projectIm img{  
+  width: 30%;
+}
+
+#thelink {
+  margin-left: 44%;
+  margin-top: 46%; 
+  overflow: visible;
+  width: 75px;
+  white-space: nowrap;
+  text-align: left;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3vw;
+  color: rgba(0, 0, 0, 1);
+  transition: all 0.3s ease-in;
+}
+
+#thelink a:link {
+  /*link style*/
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+#thelink a:visited, #paragraph a:visited  {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+#thelink a:hover  {
+  background: -webkit-linear-gradient(#00c9f9, #00fe23);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#x {
+  position: relative;
+  margin: auto;
+  margin-left: 2%;
+  top: 5%;
+  width: 2%;
+  height: 5%;
+  cursor: pointer;
+}
+
+.leftx {
+  /*left side of x*/
+  height: 6%;
+  width: 100%;
+  top: 40%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.rightx {
+  /*right side of x*/
+  height: 6%;
+  width: 100%;
+  top: 40%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+#x:hover .leftx {
+  transform: rotate(-45deg);
+  background-image: linear-gradient(120deg, #00c9f9, #00fe2e);
+}
+#x:hover .rightx {
+  transform: rotate(45deg);
+  background-image: linear-gradient(120deg, #00c9f9, #00fe2e);
+}
+
+
+@media screen and (max-width:800px){
+ 
+  #todoBackg, #gamBackg, #exhBackg{
+    margin-top: -12%;
+  }
+  .popupWindow {
+    width: 95%;
+    margin-top: -75%;
+    margin-left: 3%;    
+  }
+    .projectIm { 
+    margin-top: 10%;
+  }
+  .projectIm img{
+    padding-top: 5%;    
+  }
+  #paragraph {
+    margin-top: -5%;
+    font-size: 2vw;
+  }
+  #paragraph li{
+    font-size: 2vw;
+    margin-left: 3%;   
+  }
+  #thelink {
+    margin-top: 75%;
+    margin-left: 5%;
+    font-size: 2vw;
+  }
+  #x {
+    top: -4.5%;
+    margin-left: 4%;
+    width: 4%;
+  }
+  
+}
+
+
+@media screen and (max-width:500px){
+  
+  #todoBackg, #gamBackg, #exhBackg{
+    margin-top: -18%;
+  }
+  .popupWindow {
+    width: 90%;
+    margin-left: 3%;    
+  }
+  #title {
+    font-size: 3vw;
+  }
+  .projectIm { 
+    margin-top: 10%;
+  }
+  .projectIm img{
+    padding-top: 10%;    
+  }
+  #paragraph {
+    margin-top: 0;
+    font-size: 2.5vw;
+  }
+  #paragraph li{
+    font-size: 2.5vw;
+    margin-left: 3%;   
+  }
+  #thelink {
+    margin-top: 95%;
+    margin-left: 5%;
+    font-size: 2.3vw;
+  }
+  #x {
+    top: -4.5%;
+    margin-left: 4%;
+    width: 4%;
+  }
+  
+}
