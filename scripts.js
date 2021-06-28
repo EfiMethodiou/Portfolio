@@ -22,6 +22,14 @@ function closeMenu() {
   document.getElementById("menuCheck").checked = false;  
 }
 
+//PROJECTS SECTION FUNCTIONS
+var project1 = new Image();
+var project2 = new Image();
+var project3 = new Image();
+project1.src = "img/projects/td2.png";
+project2.src = "img/projects/gam2.png";
+project3.src = "img/projects/exh2.png";
+project3.src = "img/projects/pr4_2.png";
 
 /*HEXAGON FUNCTIONS*/
 /*big to blue*/
