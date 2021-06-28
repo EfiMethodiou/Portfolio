@@ -22,44 +22,6 @@ function closeMenu() {
   document.getElementById("menuCheck").checked = false;  
 }
 
-/*PROJECTS SECTION FUNCTIONS*/
-$(document).ready(function () {
-  $('#pr1')
-      .mouseover(function () {
-      $(this).attr("src", "img/projects/td2.png");
-  })
-      .mouseout(function () {
-      $(this).attr("src", "img/projects/td1.png");
-  });
-});
-$(document).ready(function () {
-  $('#pr2')
-      .mouseover(function () {
-      $(this).attr("src", "img/projects/gam2.png");
-  })
-      .mouseout(function () {
-      $(this).attr("src", "img/projects/gam1.png");
-  });
-});
-$(document).ready(function () {
-  $('#pr3')
-      .mouseover(function () {
-      $(this).attr("src", "img/projects/exh2.png");
-  })
-      .mouseout(function () {
-      $(this).attr("src", "img/projects/exh1.png");
-  });
-});
-$(document).ready(function () {
-  $('#pr4')
-      .mouseover(function () {
-      $(this).attr("src", "img/projects/pr4_2.png");
-  })
-      .mouseout(function () {
-      $(this).attr("src", "img/projects/pr4_1.png");
-  });
-});
-
 
 /*HEXAGON FUNCTIONS*/
 /*big to blue*/

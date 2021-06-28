@@ -19,6 +19,18 @@
   width: 19vw;
   cursor: pointer;
 }
+#pr1:hover{
+  content: url("../img/projects/td2.png");
+}
+#pr2:hover{
+  content: url("../img/projects/gam2.png");
+}
+#pr3:hover{
+  content: url("../img/projects/exh2.png");
+}
+#pr4:hover{
+  content: url("../img/projects/pr4_2.png");
+}
 .project1,
 .project2,
 .project3,
