@@ -1,26 +1,25 @@
-
 //Loader Function
-$(window).on('load', function() {
-    // Retrieve progress bar status, if it is undefined give its default status to false
-    var loadedProgress = sessionStorage.getItem('loadedProgress') || false; 
-    if(loadedProgress){
-      $('.loader_bg').css({'display': "none"});
+$(window).on("load", function () {
+  // Retrieve progress bar status, if it is undefined give its default status to false
+  var loadedProgress = sessionStorage.getItem("loadedProgress") || false;
+  if (loadedProgress) {
+    $(".loader_bg").css({ display: "none" });
+    document.body.style.overflow = "visible";
+  } else {
+    $(".loader_bg").css({ display: "block" });
+    setTimeout(function () {
+      $(".loader_bg").fadeToggle();
       document.body.style.overflow = "visible";
-    }else{
-      $('.loader_bg').css({'display': "block"});
-      setTimeout(function () {
-        $(".loader_bg").fadeToggle();  
-        document.body.style.overflow = "visible";
-      }, 3000);
-      sessionStorage.setItem('loadedProgress', true);
-    }
-  });
-  
+    }, 3000);
+    sessionStorage.setItem("loadedProgress", true);
+  }
+});
 
 /*MENU FUNCTIONS*/
 function closeMenu() {
-  document.getElementById("menuCheck").checked = false;  
+  document.getElementById("menuCheck").checked = false;
 }
+
 
 //PROJECTS SECTION FUNCTIONS
 var project1 = new Image();
@@ -30,6 +29,7 @@ project1.src = "img/projects/td2.png";
 project2.src = "img/projects/gam2.png";
 project3.src = "img/projects/exh2.png";
 project3.src = "img/projects/pr4_2.png";
+
 
 /*HEXAGON FUNCTIONS*/
 /*big to blue*/
