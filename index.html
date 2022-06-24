@@ -61,7 +61,7 @@
                 <img src="img/loader_logo.png">
             </div>
         </div>
-    </div>
+    </div> 
     <header>
         <div class="image logo">
             <a href="#home"><img src="img/logo.png" height="95%"></a>
@@ -83,24 +83,30 @@
             </div>
         </div>
     </header>
-
+    <div id="todoBackg" onclick="closePrToDo()">
+    </div>
+    <div id="gamBackg" onclick="closePrGam()">
+    </div>
+    <div id="exhBackg" onclick="closePrExh()">
+    </div>
+    <div id="acBackg" onclick="closePrACl()">
+    </div>
     <div class="main">
         <div id="home">
             <div class="hexagons">
                 <div class="hexagonbig">
-                    <div class="hexagonbig1" id="hexagonbig1" onmouseover="colortoB()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonbig1" id="hexagonbig1"></div>
 
                 </div>
                 <div class="hexagonmedium">
-                    <div class="hexagonmed1" id="hexagonmed1" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed3" id="hexagonmed3" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonmed5" id="hexagonmed5" onmouseover="colortoG()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonmed1" id="hexagonmed1"></div>
+                    <div class="hexagonmed3" id="hexagonmed3"></div>
+                    <div class="hexagonmed5" id="hexagonmed5"></div>
                 </div>
                 <div class="hexagonsmall">
-                    <div class="hexagonsm1" id="hexagonsm1" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonsm3" id="hexagonsm3" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonsm4" id="hexagonsm4" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
-                    <div class="hexagonsm5" id="hexagonsm5" onmouseover="colortoBs()" onmouseout="colorOrig()"></div>
+                    <div class="hexagonsm1" id="hexagonsm1"></div>
+                    <div class="hexagonsm3" id="hexagonsm3"></div>
+                    <div class="hexagonsm5" id="hexagonsm5"></div>
                 </div>
             </div>
             <div class="hello">
@@ -190,18 +196,14 @@
         <!--END OF ABOUT ME-->
 
         <div id="portfolio">
-            <div id="todoBackg" onclick="closePrToDo()">
-            </div>
-            <div id="gamBackg" onclick="closePrGam()">
-            </div>
-            <div id="exhBackg" onclick="closePrExh()">
-            </div>
+            
             <div class="title">
                 <h1>Portfolio</h1>
                 <span class="line"></span>
             </div>
 
-            <div class="projectContainer">
+            <div class="projectContainer" onclick="document.getElementById('portfolio').
+            scrollIntoView();">
                 <div class="project1">
                     <img id="pr1" src="img/projects/td1.png" onclick="openPrToDo()">
                 </div>
@@ -210,6 +212,9 @@
                 </div>
                 <div class="project3">
                     <img id="pr3" src="img/projects/exh1.png" onclick="openPrExh()">
+                </div>
+                <div class="project5">
+                    <img id="pr5" src="img/projects/acl1.png" onclick="openPrACl()">
                 </div>
                 <div class="project4">
                     <img id="pr4" src="img/projects/pr4_1.png" style="cursor: none;">
@@ -311,6 +316,32 @@
                         </span>
                     </div>
                     <div id="x" onclick="closePrExh()">
+                        <div class="leftx"></div>
+                        <div class="rightx"></div>
+                    </div>
+                </div>
+                <div id="pr_ac" class="popupWindow" onmousedown="return false">
+                    <div class="projectIm">
+                        <ul>
+                            <li><img src="img/projects/acl3.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/acl4.png" style="width: 25%;"></li>
+                            <li><img src="img/projects/acl5.png" style="width: 25%;"></li>
+                        </ul>
+                    </div>
+                    <div id="paragraph">
+                        <p><b>Airbnb Clone</b><br>
+                            This is an Airbnb clone made with React.<br>
+                            The project is still under construction and it's state is changing daily. <br>
+                            The design of the project might be different from it’s current display.  
+
+                        </p>
+                    </div>
+                    <div id="thelink" style="position: absolute;">
+                        <span>
+                            <a href="https://dazzling-sunflower-airbnb-clone.netlify.app/" target="_blank">Link of Project</a>
+                        </span>
+                    </div>
+                    <div id="x" onclick="closePrACl()">
                         <div class="leftx"></div>
                         <div class="rightx"></div>
                     </div>

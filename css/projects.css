@@ -31,12 +31,21 @@
 #pr4:hover{
   content: url("../img/projects/pr4_2.png");
 }
+#pr5:hover{
+  content: url("../img/projects/acl2.png");
+}
+
 .project1,
 .project2,
 .project3,
-.project4 {
+.project5 {
   position: relative;
   display: inline;
+  margin: 0 2%;
+}
+.project4 {
+  position: relative;
+  padding-top: 2%;
   margin: 0 2%;
 }
 @media screen and (max-width: 800px) {
@@ -61,21 +70,16 @@
 
 /*Project popups*/
 
-#todoBackg, #gamBackg, #exhBackg{
-  margin-top: -10vw;
+#todoBackg, #gamBackg, #exhBackg, #acBackg{
   position: absolute;
   width: 100%;
-  height: 110vh;
-  overflow: hidden;
+  height: 420vh;
+  overflow: auto;
   display: none;
   z-index: 10;
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
-@media screen and (max-width:500px){
-  #aboutBackg, #gamBackg, #exhBackg {
-    margin-top: -16vw;
-  }
-}
+
 
 .popupWindow {
   -webkit-user-select: none;
@@ -86,7 +90,7 @@
   width: 80%;  
   height: 78vh;
   margin-left: 11%;
-  margin-top: -48vh;
+  margin-top: -80vh;
   border-radius: 20px;
 }
 
@@ -209,8 +213,8 @@
 
 @media screen and (max-width:800px){
  
-  #todoBackg, #gamBackg, #exhBackg{
-    margin-top: -12%;
+  #todoBackg, #gamBackg, #exhBackg,#acBackg{
+    margin-top: -4%;       
   }
   .popupWindow {
     width: 95%;
@@ -245,10 +249,9 @@
 }
 
 
-@media screen and (max-width:500px){
-  
-  #todoBackg, #gamBackg, #exhBackg{
-    margin-top: -18%;
+@media screen and (max-width:500px){  
+  #todoBackg, #gamBackg, #exhBackg, #acBackg{
+    margin-top: 0;    
   }
   .popupWindow {
     width: 90%;

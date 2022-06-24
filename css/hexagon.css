@@ -23,6 +23,9 @@
     display: block;
     
 }
+.hexagonbig1:hover{
+    animation: rotateLeft 10s infinite linear; 
+}
 .hexagonbig1::before,
 .hexagonbig1::after {
     content: '';
@@ -41,33 +44,6 @@
     transform: rotate(-60deg);
 }
 
-/*______2_______*/
-.hexagonbig2 {
-    position: absolute;
-    left: 90%;
-    top: 70%;
-    width:150px;
-    height: 94px;
-    background-image: linear-gradient(90deg, #00c9f9, #00fe2e);    
-    transform: translate(-50%, -50%);
-    border-radius: 10px 10px 10px 10px;
-    animation: rotateRight 10s infinite linear;
-}
-.hexagonbig2::before,
-.hexagonbig2::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: inherit;  
-    position: absolute;
-    border-radius: 10px 10px 10px 10px;
-}
-.hexagonbig2::before {
-    transform: rotate(60deg);
-}
-.hexagonbig2::after {
-    transform: rotate(-60deg);
-}
 
 /*MEDIUM HEXAGONS*/
 .hexagonmed1 {
@@ -80,6 +56,9 @@
     transform: translate(-50%, -50%);
     border-radius: 10px 10px 10px 10px;
     animation: rotateRight 10s infinite linear;
+}
+.hexagonmed1:hover{
+    animation: rotateLeft 10s infinite linear; 
 }
 .hexagonmed1::before,
 .hexagonmed1::after {
@@ -96,33 +75,7 @@
 .hexagonmed1::after {
     transform: rotate(-60deg);
 }
-/*______2_______*/
-.hexagonmed2 {
-    position: absolute;
-    top: 75%;
-    left: 20%;    
-    width:80px;
-    height: 54px;
-    background-image: linear-gradient(90deg, #00c9f9, #00fe2e);    
-    transform: translate(-50%, -50%);
-    border-radius: 10px 10px 10px 10px;
-    animation: rotateRight 10s infinite linear;
-}
-.hexagonmed2::before,
-.hexagonmed2::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: inherit; 
-    position: absolute;
-    border-radius: 10px 10px 10px 10px;
-}
-.hexagonmed2::before {
-    transform: rotate(60deg);
-}
-.hexagonmed2::after {
-    transform: rotate(-60deg);
-}
+
 /*______3_______*/
 .hexagonmed3 {
     position: absolute;
@@ -134,6 +87,9 @@
     transform: translate(-50%, -50%);
     border-radius: 10px 10px 10px 10px;
     animation: rotateRight 10s infinite linear;
+}
+.hexagonmed3:hover{
+    animation: rotateLeft 10s infinite linear; 
 }
 .hexagonmed3::before,
 .hexagonmed3::after {
@@ -150,33 +106,7 @@
 .hexagonmed3::after {
     transform: rotate(-60deg);
 }
-/*______4_______*/
-.hexagonmed4 {
-    position: absolute;
-    top: 85%;
-    left: 45%;    
-    width:80px;
-    height: 54px;
-    background-image: linear-gradient(90deg, #00c9f9, #00fe2e);    
-    transform: translate(-50%, -50%);
-    border-radius: 10px 10px 10px 10px;
-    animation: rotateRight 10s infinite linear;
-}
-.hexagonmed4::before,
-.hexagonmed4::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: inherit;  
-    position: absolute;
-    border-radius: 10px 10px 10px 10px;
-}
-.hexagonmed4::before {
-    transform: rotate(60deg);
-}
-.hexagonmed4::after {
-    transform: rotate(-60deg);
-}
+
 /*______5_______*/
 .hexagonmed5 {
     position: absolute;
@@ -188,6 +118,9 @@
     transform: translate(-50%, -50%);
     border-radius: 10px 10px 10px 10px;
     animation: rotateRight 10s infinite linear;
+}
+.hexagonmed5:hover{
+    animation: rotateLeft 10s infinite linear; 
 }
 .hexagonmed5::before,
 .hexagonmed5::after {
@@ -218,6 +151,9 @@
     border-radius: 2px 2px 2px 2px;
     animation: rotateRight 10s infinite linear;
 }
+.hexagonsm1:hover{
+    animation: rotateLeft 10s infinite linear; 
+}
 .hexagonsm1::before,
 .hexagonsm1::after {
     content: '';
@@ -233,33 +169,7 @@
 .hexagonsm1::after {
     transform: rotate(-60deg);
 }
-/*______2_______*/
-.hexagonsm2 {
-    position: absolute;
-    top: 90%;
-    left: 75%;    
-    width:35px;
-    height: 21px;
-    background-image: linear-gradient(90deg, #00c9f9, #00fe2e);    
-    transform: translate(-50%, -50%);
-    border-radius: 2px 2px 2px 2px;
-    animation: rotateRight 10s infinite linear;
-}
-.hexagonsm2::before,
-.hexagonsm2::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: inherit;   
-    position: absolute;
-    border-radius: 2px 2px 2px 2px;
-}
-.hexagonsm2::before {
-    transform: rotate(60deg);
-}
-.hexagonsm2::after {
-    transform: rotate(-60deg);
-}
+
 /*______3_______*/
 .hexagonsm3 {
     position: absolute;
@@ -271,6 +181,9 @@
     transform: translate(-50%, -50%);
     border-radius: 2px 2px 2px 2px;
     animation: rotateRight 10s infinite linear;
+}
+.hexagonsm3:hover{
+    animation: rotateLeft 10s infinite linear; 
 }
 .hexagonsm3::before,
 .hexagonsm3::after {
@@ -287,33 +200,7 @@
 .hexagonsm3::after {
     transform: rotate(-60deg);
 }
-/*______4_______*/
-.hexagonsm4 {
-    position: absolute;
-    top: 45%;
-    left: 85%;    
-    width:35px;
-    height: 21px;
-    background-image: linear-gradient(90deg, #00c9f9, #00fe2e);    
-    transform: translate(-50%, -50%);
-    border-radius: 2px 2px 2px 2px;
-    animation: rotateRight 10s infinite linear;
-}
-.hexagonsm4::before,
-.hexagonsm4::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-image: inherit;  
-    position: absolute;
-    border-radius: 2px 2px 2px 2px;
-}
-.hexagonsm4::before {
-    transform: rotate(60deg);
-}
-.hexagonsm4::after {
-    transform: rotate(-60deg);
-}
+
 /*______5_______*/
 .hexagonsm5 {
     position: absolute;
@@ -325,6 +212,9 @@
     transform: translate(-50%, -50%);
     border-radius: 2px 2px 2px 2px;
     animation: rotateRight 10s infinite linear;
+}
+.hexagonsm5:hover{
+    animation: rotateLeft 10s infinite linear; 
 }
 .hexagonsm5::before,
 .hexagonsm5::after {
@@ -349,5 +239,14 @@
       }
       to {
         transform: rotate(359deg);
+      }    
+}
+
+@keyframes rotateLeft {
+    from {
+       transform: rotate(359deg); 
+      }
+      to {
+        transform: rotate(0deg);
       }    
 }
